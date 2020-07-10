@@ -5,16 +5,19 @@ class Counter extends React.Component {
   constructor(props) {
     super(props);
     this.state = {value: 0};
+    this.onChange = props.onChange;
     this.minusOne= this.minusOne.bind(this);
     this.plusOne= this.plusOne.bind(this);
   }
 
   minusOne() {
     this.setState({value: this.state.value - 1});
+    this.onChange(-1);
   }
 
   plusOne() {
     this.setState({value: this.state.value + 1});
+    this.onChange(1);
   }
 
   render() {
