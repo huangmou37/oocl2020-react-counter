@@ -1,4 +1,4 @@
-# React Counter Component
+# React Counter Group Component
 
 ## Requirements
 1. Create react app to create react development stack
